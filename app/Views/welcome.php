@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <div class="bg-img-hero-bottom gradient-overlay-half-black-gradient space-1 text-center" style="background-image: url(https://placehold.co/1920x800);">
-    <div class="container">
+    <div class="container space-2">
         <div class="px-3 pb-4 py-xl-11 mt-xl-4">
             <h1 class="font-size-60 font-size-xs-30 text-white font-weight-bold">Online Ticketing</h1>
             <p class="font-size-20 font-weight-normal text-white ml-3">Temukan Bus yang nyaman dan luar biasa</p>
@@ -62,7 +62,7 @@
                                 <form class="js-validate">
                                     <div class="row d-block nav-select d-lg-flex mb-lg-3 px-2 px-lg-3 align-items-end">
 
-                                        <div class="col-sm-12 col-lg-3dot6 col-xl-3gdot5 mb-4 mb-lg-0">
+                                        <div class="col-sm-4 mb-4 mb-lg-0">
                                             <span class="d-block text-gray-1 font-weight-normal text-left mb-0">Kota Asal</span>
                                             <select class="js-select selectpicker dropdown-select tab-dropdown col-12 pl-0 flaticon-pin-1 d-flex align-items-center text-primary font-weight-semi-bold"
                                                 title="Kota Asal" 
@@ -74,7 +74,7 @@
                                             </select>
                                         </div>
 
-                                        <div class="col-sm-12 col-xl-3 mb-4 mb-lg-0">
+                                        <div class="col-sm-4 col-xl-3 mb-4 mb-lg-0">
                                             <span class="d-block text-gray-1 font-weight-normal text-left mb-0">Kota Tujuan</span>
                                             <select class="js-select selectpicker dropdown-select tab-dropdown col-12 pl-0 flaticon-pin-1 d-flex align-items-center text-primary font-weight-semi-bold"
                                                 title="Kota Tujuan" 
@@ -86,19 +86,18 @@
                                             </select>
                                         </div>
 
-                                        <div class="col-sm-12 col-lg-3dot7 col-xl-3gdot5 mb-4 mb-lg-0 ">
-                                            <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Tanggal</span>
+                                        <div class="col-sm-4 col-xl-3 mb-4 mb-xl-0">
+                                            <span class="d-block text-gray-1 font-weight-normal text-left mb-0">Tanggal</span>
                                             <div class="border-bottom border-width-2 border-color-1">
                                                 <div id="datepickerWrapperFromOne" class="u-datepicker input-group">
                                                     <div class="input-group-prepend">
                                                         <span class="d-flex align-items-center mr-2">
-                                                            <i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+                                                        <i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
                                                         </span>
                                                     </div>
-                                                    <input class="js-range-datepicker font-size-16 shadow-none font-weight-medium form-control hero-form bg-transparent  border-0"
-                                                        type="date" data-rp-wrapper="#datepickerWrapperFromOne"
-                                                        data-rp-type="range" data-rp-date-format="M d / Y"
-                                                        data-rp-default-date="">
+                                                    <input class="js-range-datepicker font-size-lg-16 shadow-none font-weight-bold form-control hero-form bg-transparent  border-0" type="text" placeholder="<?= date('Y-m-d') ?>" aria-label="From"
+                                                        data-rp-wrapper="#datepickerWrapperFromOne"
+                                                        data-rp-date-format="Y-m-d">
                                                 </div>
                                             </div>
                                         </div>
@@ -266,7 +265,7 @@
     </div>
 </div>
 
-<div class="icon-block-center icon-center-v1 border-bottom">
+<div class="icon-block-center icon-center-v1 border-bottom" id="carapemesanan">
     <div class="container text-center space-1">
         <div class="w-md-80 w-lg-50 text-center mx-md-auto pb-1 mt-3">
             <h2 class="section-title text-black font-size-30 font-weight-bold">Cara Pemesanan</h2>

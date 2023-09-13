@@ -21,8 +21,42 @@
 </head>
 
 <body>
-    <header id="header" class="u-header u-header--abs-top u-header--white-nav-links-xl u-header--bg-transparent u-header--show-hide border-bottom border-xl-bottom-0 border-color-white" data-header-fix-moment="500" data-header-fix-effect="slide">
+    <header id="header" class="u-header u-header--abs-top-xl u-header--white-nav-links-xl u-header--bg-transparent-xl u-header--show-hide-xl" data-header-fix-moment="500" data-header-fix-effect="slide">
+        <div class="u-header__section u-header__shadow-on-show-hide py-4 py-xl-0">
+            <div id="logoAndNav" class="container py-xl-3">
+                <nav class="js-mega-menu navbar navbar-expand-xl u-header__navbar u-header__navbar--no-space">
+                    <a class="navbar-brand u-header__navbar-brand-default u-header__navbar-brand-center u-header__navbar-brand-text-white" href="<?= base_url('') ?>" aria-label="Gunung Harta">
+                        <img src="https://gunungharta.com/web/wp-content/uploads/2021/12/Logo-Gunung-Harta.png" alt="">
+                    </a>
 
+                    <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-collapsed" href="<?= base_url('') ?>" aria-label="Gunung Harta">
+                        <img src="https://gunungharta.com/web/wp-content/uploads/2021/12/Logo-Gunung-Harta.png" alt="">
+                    </a>
+
+                    <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-on-scroll" href="<?= base_url('') ?>" aria-label="Gunung Harta">
+                        <img src="https://gunungharta.com/web/wp-content/uploads/2021/12/Logo-Gunung-Harta.png" alt="">
+                    </a>
+
+                    <button type="button" class="navbar-toggler btn u-hamburger u-hamburger--primary order-2 ml-3" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                        <span id="hamburgerTrigger" class="u-hamburger__box">
+                            <span class="u-hamburger__inner"></span>
+                        </span>
+                    </button>
+
+                    <div id="navBar" class="navbar-collapse u-header__navbar-collapse collapse order-2 order-xl-0 pt-4 p-xl-0 position-relative">
+                        <ul class="navbar-nav u-header__navbar-nav">
+                            <li class="nav-item u-header__nav-item">
+                                <a class="nav-link u-header__nav-link u-header__nav-link-border" href="#">Home</a>
+                            </li>
+                            <li class="nav-item u-header__nav-item">
+                                <a class="nav-link u-header__nav-link u-header__nav-link-border" href="#carapemesanan">Cara Pemesanan</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main id="content">
