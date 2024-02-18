@@ -194,8 +194,6 @@
     </div>
 </div>
 
- <?php print_r($wilayahData); ?>
-
 <div class="destinantion-block destinantion-v1">
     <div class="container space-bottom-1 space-1">
         <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mt-4">
