@@ -17,7 +17,7 @@ class Home extends BaseController
     {
         $bus = [];
         $wilayah = $this->ticketService->getWilayah();
-
+        $req = [];
         if ($this->request->getGet()) {
             $rule = [
                 'wilayahAsal' => 'required|integer',
@@ -40,6 +40,7 @@ class Home extends BaseController
         return view('home', [
             'wilayah' => $wilayah,
             'bus' => $bus,
+            'cari' => $req
         ]);
     }
 }
