@@ -69,11 +69,15 @@
                                                 <select class="js-select selectpicker dropdown-select tab-dropdown col-12 pl-0 flaticon-pin-1 d-flex align-items-center text-primary font-weight-semi-bold"
                                                         title="Kota Asal"
                                                         data-style data-live-search="true"
-                                                        data-searchbox-classes="input-group-sm">
-                                                    <option class="border-bottom border-color-1" value="project1"
-                                                            data-content="">
-                                                        Tabanan
-                                                    </option>
+                                                        data-searchbox-classes="input-group-sm"
+                                                        name="wilayahAsal">
+                                                    <?php foreach ($wilayah as $item): ?>
+                                                        <option class="border-bottom border-color-1"
+                                                                value="<?= esc($item['id']) ?>"
+                                                                data-content="">
+                                                            <?= esc($item['wilayah']) ?>
+                                                        </option>
+                                                    <?php endforeach ?>
                                                 </select>
                                             </div>
 
@@ -82,11 +86,15 @@
                                                 <select class="js-select selectpicker dropdown-select tab-dropdown col-12 pl-0 flaticon-pin-1 d-flex align-items-center text-primary font-weight-semi-bold"
                                                         title="Kota Tujuan"
                                                         data-style data-live-search="true"
-                                                        data-searchbox-classes="input-group-sm">
-                                                    <option class="border-bottom border-color-1" value="project1"
-                                                            data-content="">
-                                                        Denpasar
-                                                    </option>
+                                                        data-searchbox-classes="input-group-sm"
+                                                        name="wilayahTujuan">
+                                                    <?php foreach ($wilayah as $item): ?>
+                                                        <option class="border-bottom border-color-1"
+                                                                value="<?= esc($item['id']) ?>"
+                                                                data-content="">
+                                                            <?= esc($item['wilayah']) ?>
+                                                        </option>
+                                                    <?php endforeach ?>
                                                 </select>
                                             </div>
 
@@ -103,7 +111,8 @@
                                                                type="text" placeholder="<?= date('Y-m-d') ?>"
                                                                aria-label="From"
                                                                data-rp-wrapper="#datepickerWrapperFromOne"
-                                                               data-rp-date-format="Y-m-d">
+                                                               data-rp-date-format="Y-m-d"
+                                                               name="tglBerangkat">
                                                     </div>
                                                 </div>
                                             </div>
@@ -118,6 +127,38 @@
                                             </div>
                                         </div>
                                     </form>
+                                    <div class="row">
+                                        <?php foreach ($bus ?? [] as $item): ?>
+                                            <div class="col-lg-4 col-md-6 col-12">
+                                                <div class="card" style="width: 18rem;">
+                                                    <div class="card-header">
+                                                        <?= esc($item['nama']) ?>
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item"><?= esc(
+                                                                $item['busSudahDiset']
+                                                            ) ?></li>
+                                                        <li class="list-group-item"><?= esc(
+                                                                $item['busSudahDisetId']
+                                                            ) ?></li>
+                                                        <li class="list-group-item"><?= esc(
+                                                                $item['totalPenumpang']
+                                                            ) ?></li>
+                                                        <li class="list-group-item"><?= esc($item['totalKursi']) ?></li>
+                                                        <li class="list-group-item"><?= esc(
+                                                                $item['goodFormatDate']
+                                                            ) ?></li>
+                                                        <li class="list-group-item"><?= esc(
+                                                                $item['wilayahAsal']
+                                                            ) ?></li>
+                                                        <li class="list-group-item"><?= esc(
+                                                                $item['wilayahTujuan']
+                                                            ) ?></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <?php endforeach ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
