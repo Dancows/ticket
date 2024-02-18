@@ -49,6 +49,9 @@
                                 <a class="nav-link u-header__nav-link u-header__nav-link-border" href="#">Home</a>
                             </li>
                             <li class="nav-item u-header__nav-item">
+                                <a class="nav-link u-header__nav-link u-header__nav-link-border" href="#ketentuanpemesanan">Ketentuan Pemesanan</a>
+                            </li>
+                            <li class="nav-item u-header__nav-item">
                                 <a class="nav-link u-header__nav-link u-header__nav-link-border" href="#carapemesanan">Cara Pemesanan</a>
                             </li>
                         </ul>

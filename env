@@ -15,6 +15,7 @@
 #--------------------------------------------------------------------
 
 # CI_ENVIRONMENT = production
+CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
@@ -141,3 +142,6 @@
 #--------------------------------------------------------------------
 
 # curlrequest.shareOptions = true
+
+api.url = 'http://gunungharta-gncpanel.igetbali.com/apiGeneral'
+api.key = '778e86816f766182b4e3a25564429335'
